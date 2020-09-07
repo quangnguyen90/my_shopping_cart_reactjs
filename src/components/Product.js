@@ -44,12 +44,12 @@ class Product extends Component {
         var result = [];
         for (var i = 1; i <= rating; i++) {
             result.push(
-                <i className="fa fa-star"></i>
+                <i key={i} className="fa fa-star"></i>
             );
         }
         for (var j = 1; j <= (5 - rating); j++) {
             result.push(
-                <i className="fa fa-star-o"></i>
+                <i key={i + j} className="fa fa-star-o"></i>
             );
         }
         return result;
