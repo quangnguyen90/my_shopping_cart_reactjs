@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Products from './components/Products';
 import Message from './components/Message';
 import Cart from './components/Cart';
+import ProductContainer from './container/ProductContainer';
 
 class App extends Component {
     render() {
@@ -13,12 +13,12 @@ class App extends Component {
                     <Header />
                     <main id="mainContainer">
                         <div className="container">
-                            <Products />
+                            <ProductContainer />
                             <Message />
                             <Cart />
                         </div>
                     </main>
-                    <Footer/>
+                    <Footer />
                 </div>
             </div>
         );
