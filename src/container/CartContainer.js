@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Cart from '../components/Cart';
-import * as Message from './../contants/Message';
+import * as Message from './../constants/Message';
 import CartItem from '../components/CartItem';
 import CartResult from '../components/CartResult';
 
@@ -18,7 +18,7 @@ class CartContainer extends Component {
     }
 
     showCartItem = (cart) => {
-        var result = Message.MSG_CART_EMPTY;
+        var result = <tr><td>{Message.MSG_CART_EMPTY}</td></tr>;
         if(cart.length > 0) {
             result = cart.map((item, index) => {
                 return (
