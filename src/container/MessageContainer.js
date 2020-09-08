@@ -22,10 +22,4 @@ const mapStateToProps = state => {
     }
 }
 
-const mapDispatchToProps = (dispatch, props) => {
-    return {
-
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(MessageContainer);
+export default connect(mapStateToProps, null)(MessageContainer);
